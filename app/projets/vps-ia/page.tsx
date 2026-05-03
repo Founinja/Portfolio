@@ -88,9 +88,9 @@ export default function VPSProjectPage() {
             <div className="my-12">
               <div className="bg-[#111] p-2 rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
                 <img 
-                  src="/vps-diagram.png" 
-                  alt="Architecture VPS / Docker / Nginx" 
-                  className="w-full h-auto rounded-xl"
+                  src="/Portfolio/vps-diagram.png" 
+                  alt="Architecture VPS & Flux Nginx" 
+                  className="w-full h-auto rounded-xl shadow-2xl"
                 />
               </div>
               <p className="text-center text-xs text-gray-500 mt-3 italic">Diagramme de flux et architecture du VPS Hostinger</p>

@@ -224,7 +224,7 @@ export default function Portfolio() {
               {/* QUICK ACCESS BUTTONS */}
               <div className="flex flex-col sm:flex-row gap-6 mb-16 max-w-2xl mx-auto md:mx-0">
                 <a
-                  href="/cv-jordan-aziaha.pdf"
+                  href="/Portfolio/cv-jordan-aziaha.pdf"
                   target="_blank"
                   className="flex-1 flex items-center justify-center gap-3 bg-white text-orange-600 py-4 rounded-2xl font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl"
                 >
@@ -232,7 +232,7 @@ export default function Portfolio() {
                   CONSULTER MON CV
                 </a>
                 <a
-                  href="/tableau-synthese-jordan-aziaha.pdf"
+                  href="/Portfolio/tableau-synthese-jordan-aziaha.pdf"
                   target="_blank"
                   className="flex-1 flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white py-4 rounded-2xl font-bold uppercase tracking-widest hover:bg-white hover:text-orange-600 transition-all shadow-xl"
                 >
@@ -741,7 +741,7 @@ export default function Portfolio() {
 
           <div className="mt-16 text-center">
             <a
-              href="/tableau-synthese-jordan-aziaha.pdf"
+              href="/Portfolio/tableau-synthese-jordan-aziaha.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full font-bold transition-all shadow-lg shadow-orange-500/25 group"
