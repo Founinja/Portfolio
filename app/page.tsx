@@ -292,12 +292,12 @@ export default function Portfolio() {
 
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="space-y-8">
-              <h3 className="text-3xl font-bold text-white">Sécuriser et optimiser les infrastructures de demain</h3>
+              <h3 className="text-3xl font-bold text-white">L'infrastructure au service de l'intelligence artificielle</h3>
               <p className="text-gray-400 leading-relaxed text-lg">
-                Actuellement en 2ème année de **BTS SIO spécialité SISR à l'école IPSSI**, je me consacre à l'apprentissage des meilleures pratiques en matière d'infrastructure et de réseau. Mon parcours a débuté avec un Bac général (NSI/SES), qui m'a permis de développer une base solide en informatique et une curiosité pour les systèmes complexes.
+                Actuellement en 2ème année de **BTS SIO spécialité SISR à l'école IPSSI**, je ne me contente pas de suivre un cursus académique. Passionné par l'efficience technologique, j'ai choisi d'entreprendre en parallèle de mes études pour confronter mes compétences aux exigences réelles du marché.
               </p>
               <p className="text-gray-400 leading-relaxed text-lg">
-                J'ai la chance de mettre en pratique mes connaissances en conditions réelles puisque je suis en **alternance au sein d'une agence d'automatisation**. Avant cela, j'ai acquis mes premières expériences professionnelles lors d'un stage au **Ministère de la Justice (SNUM)** en 1ère année, où j'ai découvert les enjeux de la souveraineté numérique et de la haute disponibilité.
+                J'ai la chance de mettre en pratique mes connaissances en conditions réelles en pilotant ma propre **agence d'automatisation IA**. Avant cela, j'ai acquis mes premières expériences professionnelles lors d'un stage au **Ministère de la Justice (SNUM)** en 1ère année, où j'ai découvert les enjeux de la souveraineté numérique et de la haute disponibilité.
               </p>
             </div>
 
@@ -306,18 +306,18 @@ export default function Portfolio() {
                 <div className="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
                   <GraduationCap size={24} />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-2">École</h4>
-                <p className="text-gray-400 text-sm">IPSSI Marne-La-Vallée</p>
-                <p className="text-orange-500 text-xs font-mono mt-2 uppercase tracking-widest">BTS SIO Option SISR</p>
+                <h4 className="text-xl font-bold text-white mb-2">Formation</h4>
+                <p className="text-gray-400 text-sm">IPSSI / BTS SIO SISR</p>
+                <p className="text-orange-500 text-xs font-mono mt-2 uppercase tracking-widest">Expertise Réseau</p>
               </div>
 
               <div className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-blue-500/30 transition-all shadow-xl group">
                 <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
-                  <Briefcase size={24} />
+                  <Shield size={24} />
                 </div>
-                <h4 className="text-xl font-bold text-white mb-2">Alternance</h4>
-                <p className="text-gray-400 text-sm">Agence d'Automatisation</p>
-                <p className="text-blue-500 text-xs font-mono mt-2 uppercase tracking-widest">Gestion Cloud & VPS</p>
+                <h4 className="text-xl font-bold text-white mb-2">Souveraineté</h4>
+                <p className="text-gray-400 text-sm">Ministère de la Justice</p>
+                <p className="text-blue-500 text-xs font-mono mt-2 uppercase tracking-widest">Infrastructure d'État</p>
               </div>
 
               <div className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-green-500/30 transition-all shadow-xl group sm:col-span-2">
@@ -326,10 +326,10 @@ export default function Portfolio() {
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   <div>
-                    <h4 className="text-xl font-bold text-white mb-2">Indépendant / Entrepreneur</h4>
-                    <p className="text-gray-400 text-sm">Solutions d'Infrastructure Cloud</p>
+                    <h4 className="text-xl font-bold text-white mb-2">Founder & AI Engineer</h4>
+                    <p className="text-gray-400 text-sm">Agence d'Automatisation IA</p>
                   </div>
-                  <p className="text-green-500 text-xs font-mono uppercase tracking-widest">Docker & VPS</p>
+                  <p className="text-green-500 text-xs font-mono uppercase tracking-widest">Entrepreneur Indépendant</p>
                 </div>
               </div>
             </div>
@@ -387,7 +387,7 @@ export default function Portfolio() {
                   <h3 className="text-2xl font-bold text-white mb-2">Stage de 1ère année</h3>
                   <p className="text-blue-500 font-mono text-sm uppercase tracking-wider">Ministère de la Justice (SNUM)</p>
                 </div>
-                <span className="px-4 py-1 rounded-full bg-white/5 text-white/50 text-xs border border-white/10">2023 (8 semaines)</span>
+                <span className="px-4 py-1 rounded-full bg-white/5 text-white/50 text-xs border border-white/10">2025 (8 semaines)</span>
               </div>
               <p className="text-gray-400 leading-relaxed mb-8">
                 Stage d'observation au sein du Service du Numérique. Découverte des infrastructures critiques et des enjeux de souveraineté numérique de l'administration judiciaire.
@@ -414,7 +414,7 @@ export default function Portfolio() {
                   <h3 className="text-2xl font-bold text-white mb-2">Alternance</h3>
                   <p className="text-orange-500 font-mono text-sm uppercase tracking-wider">Agence d'Automatisation</p>
                 </div>
-                <span className="px-4 py-1 rounded-full bg-white/5 text-white/50 text-xs border border-white/10">2024 - Présent</span>
+                <span className="px-4 py-1 rounded-full bg-white/5 text-white/50 text-xs border border-white/10">2026 - Présent</span>
               </div>
               <p className="text-gray-400 leading-relaxed mb-8">
                 Déploiement de solutions d'automatisation et veille technologique. Optimisation de processus internes via des agents spécialisés.
@@ -499,10 +499,35 @@ export default function Portfolio() {
               </Link>
             </div>
 
-            {/* PROJET 03 - VPS Cloud */}
+            {/* PROJET 03 - Active Directory */}
+            <div className="group bg-[#0a0a0a] rounded-3xl p-8 border border-white/10 hover:border-indigo-500/30 transition-all flex flex-col">
+              <div className="flex justify-between items-start mb-6">
+                <span className="text-4xl font-black text-white/10 group-hover:text-indigo-500/20 transition-colors">03</span>
+                <span className="px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full text-[10px] font-bold uppercase tracking-widest border border-indigo-500/20">
+                  Formation Académique
+                </span>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-indigo-500 transition-colors">Atelier Active Directory</h3>
+              <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-1">
+                Mise en place d'un domaine Active Directory (AD DS) : gestion des utilisateurs, des Unités d'Organisation et des GPOs.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-8">
+                <span className="px-2 py-1 bg-white/5 text-white/50 rounded text-[10px] font-mono">AD DS</span>
+                <span className="px-2 py-1 bg-white/5 text-white/50 rounded text-[10px] font-mono">GPOs</span>
+                <span className="px-2 py-1 bg-white/5 text-white/50 rounded text-[10px] font-mono">DNS</span>
+              </div>
+              <Link href="/projets/ad">
+                <button className="w-full flex items-center justify-center gap-2 py-3 bg-white/5 hover:bg-indigo-500/20 text-white rounded-xl font-bold transition-all border border-white/10 group">
+                  Voir le projet
+                  <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
+                </button>
+              </Link>
+            </div>
+
+            {/* PROJET 04 - VPS Cloud */}
             <div className="group bg-[#0a0a0a] rounded-3xl p-8 border border-white/10 hover:border-orange-500/50 transition-all flex flex-col">
               <div className="flex justify-between items-start mb-6">
-                <span className="text-4xl font-black text-white/10 group-hover:text-orange-500/20 transition-colors">03</span>
+                <span className="text-4xl font-black text-white/10 group-hover:text-orange-500/20 transition-colors">04</span>
                 <span className="px-3 py-1 bg-orange-500/10 text-orange-400 rounded-full text-[10px] font-bold uppercase tracking-widest border border-orange-500/20">
                   Épreuve E6 - Entreprise
                 </span>
@@ -524,10 +549,10 @@ export default function Portfolio() {
               </Link>
             </div>
 
-            {/* PROJET 04 - OPNsense */}
+            {/* PROJET 05 - OPNsense */}
             <div className="group bg-[#0a0a0a] rounded-3xl p-8 border border-white/10 hover:border-blue-300/30 transition-all flex flex-col">
               <div className="flex justify-between items-start mb-6">
-                <span className="text-4xl font-black text-white/10 group-hover:text-blue-300/20 transition-colors">04</span>
+                <span className="text-4xl font-black text-white/10 group-hover:text-blue-300/20 transition-colors">05</span>
                 <span className="px-3 py-1 bg-blue-300/10 text-blue-300 rounded-full text-[10px] font-bold uppercase tracking-widest border border-blue-300/20">
                   En cours
                 </span>
@@ -549,10 +574,10 @@ export default function Portfolio() {
               </Link>
             </div>
 
-            {/* PROJET 05 - Graylog */}
+            {/* PROJET 06 - Graylog */}
             <div className="group bg-[#0a0a0a] rounded-3xl p-8 border border-white/10 hover:border-gray-500/50 transition-all flex flex-col">
               <div className="flex justify-between items-start mb-6">
-                <span className="text-4xl font-black text-white/10 group-hover:text-gray-500/20 transition-colors">05</span>
+                <span className="text-4xl font-black text-white/10 group-hover:text-gray-500/20 transition-colors">06</span>
                 <span className="px-3 py-1 bg-white/10 text-gray-400 rounded-full text-[10px] font-bold uppercase tracking-widest border border-white/20">
                   En cours
                 </span>
@@ -568,31 +593,6 @@ export default function Portfolio() {
               </div>
               <Link href="/projets/graylog">
                 <button className="w-full flex items-center justify-center gap-2 py-3 bg-white/5 hover:bg-white/10 text-white rounded-xl font-bold transition-all border border-white/10 group">
-                  Voir le projet
-                  <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
-                </button>
-              </Link>
-            </div>
-
-            {/* PROJET 06 - Active Directory */}
-            <div className="group bg-[#0a0a0a] rounded-3xl p-8 border border-white/10 hover:border-indigo-500/30 transition-all flex flex-col">
-              <div className="flex justify-between items-start mb-6">
-                <span className="text-4xl font-black text-white/10 group-hover:text-indigo-500/20 transition-colors">06</span>
-                <span className="px-3 py-1 bg-indigo-500/10 text-indigo-400 rounded-full text-[10px] font-bold uppercase tracking-widest border border-indigo-500/20">
-                  Formation Académique
-                </span>
-              </div>
-              <h3 className="text-xl font-bold text-white mb-4 group-hover:text-indigo-500 transition-colors">Atelier Active Directory</h3>
-              <p className="text-gray-400 text-sm leading-relaxed mb-6 flex-1">
-                Mise en place d'un domaine Active Directory (AD DS) : gestion des utilisateurs, des Unités d'Organisation et des GPOs.
-              </p>
-              <div className="flex flex-wrap gap-2 mb-8">
-                <span className="px-2 py-1 bg-white/5 text-white/50 rounded text-[10px] font-mono">AD DS</span>
-                <span className="px-2 py-1 bg-white/5 text-white/50 rounded text-[10px] font-mono">GPOs</span>
-                <span className="px-2 py-1 bg-white/5 text-white/50 rounded text-[10px] font-mono">DNS</span>
-              </div>
-              <Link href="/projets/ad">
-                <button className="w-full flex items-center justify-center gap-2 py-3 bg-white/5 hover:bg-indigo-500/20 text-white rounded-xl font-bold transition-all border border-white/10 group">
                   Voir le projet
                   <ArrowRight size={16} className="transition-transform group-hover:translate-x-1" />
                 </button>
@@ -794,9 +794,9 @@ export default function Portfolio() {
               </div>
 
               <div className="flex gap-4">
-                <a 
-                  href="https://www.linkedin.com/in/jordan-aziaha-9034102b4" 
-                  target="_blank" 
+                <a
+                  href="https://www.linkedin.com/in/jordan-aziaha-9034102b4"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center text-white hover:bg-orange-500 transition-all border border-white/10"
                 >
@@ -810,23 +810,23 @@ export default function Portfolio() {
               <form className="space-y-6">
                 <div>
                   <label className="block text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">Nom / Entreprise</label>
-                  <input 
-                    type="text" 
+                  <input
+                    type="text"
                     className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-orange-500 transition-all"
                     placeholder="Votre nom"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">Email professionnel</label>
-                  <input 
-                    type="email" 
+                  <input
+                    type="email"
                     className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-orange-500 transition-all"
                     placeholder="votre@email.com"
                   />
                 </div>
                 <div>
                   <label className="block text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">Message</label>
-                  <textarea 
+                  <textarea
                     rows={4}
                     className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-white focus:outline-none focus:border-orange-500 transition-all resize-none"
                     placeholder="Comment puis-je vous aider ?"
