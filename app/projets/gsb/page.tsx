@@ -88,7 +88,7 @@ export default function GSBProjectPage() {
             <div className="my-12">
               <div className="bg-[#111] p-2 rounded-2xl border border-white/10 overflow-hidden shadow-2xl">
                 <img 
-                  src="/Portfolio/gsb-network.png" 
+                  src="/gsb-network.png" 
                   alt="Topologie Réseau GSB Cisco Packet Tracer" 
                   className="w-full h-auto rounded-xl"
                 />
@@ -106,7 +106,7 @@ export default function GSBProjectPage() {
           <div className="mt-20 pt-10 border-t border-white/10">
             <h3 className="text-lg font-bold text-white mb-6">Documents techniques</h3>
             <div className="grid sm:grid-cols-2 gap-4">
-              <a href="/Portfolio/GSB_Archives.zip" download className="flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/5 transition-colors group">
+              <a href="/GSB_Archives.zip" download className="flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/5 transition-colors group">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-500">
                     <Download size={18} />
