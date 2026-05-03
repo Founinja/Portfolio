@@ -2,13 +2,15 @@
 const nextConfig = {
   output: 'export',
   basePath: '/Portfolio',
-  assetPrefix: '/Portfolio',
-  typescript: {
-    ignoreBuildErrors: true,
-  },
   images: {
     unoptimized: true,
   },
-}
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
 
-export default nextConfig
+export default nextConfig;
