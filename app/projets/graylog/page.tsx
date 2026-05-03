@@ -110,7 +110,7 @@ export default function GraylogProjectPage() {
           <div className="mt-20 pt-10 border-t border-white/10">
             <h3 className="text-lg font-bold text-white mb-6">Plan de Réalisation & Ressources</h3>
             <div className="grid sm:grid-cols-2 gap-4">
-              <a href="/Graylog_E6_EPREUVE_PRATIQUE.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/5 transition-colors group">
+              <a href={`${process.env.NEXT_PUBLIC_BASE_PATH}/Graylog_E6_EPREUVE_PRATIQUE.pdf`} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-white/5 hover:bg-white/10 rounded-xl border border-white/5 transition-colors group">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg bg-green-500/10 flex items-center justify-center text-green-500">
                     <Download size={18} />
