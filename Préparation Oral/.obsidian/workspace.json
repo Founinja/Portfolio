@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Technique/01_GSB_AD_GLPI.md",
+                "file": "02_Script_Presentation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_GSB_AD_GLPI"
+              "title": "02_Script_Presentation"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Technique/01_GSB_AD_GLPI.md",
+                "file": "02_Script_Presentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Rétrolien pour 01_GSB_AD_GLPI"
+              "title": "Rétrolien pour 02_Script_Presentation"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Technique/01_GSB_AD_GLPI.md",
+                "file": "02_Script_Presentation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Liens sortants de 01_GSB_AD_GLPI"
+              "title": "Liens sortants de 02_Script_Presentation"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Technique/01_GSB_AD_GLPI.md",
+                "file": "02_Script_Presentation.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Plan de 01_GSB_AD_GLPI"
+              "title": "Plan de 02_Script_Presentation"
             }
           }
         ]
@@ -185,11 +185,11 @@
   },
   "active": "e5ad5c7b44cba4cc",
   "lastOpenFiles": [
+    "01_Attentes_Jury.md",
+    "Technique/01_GSB_AD_GLPI.md",
     "Technique/02_Nginx_OPNsense_Graylog.md",
     "Technique/03_Docker_Virtualisation.md",
-    "Technique/01_GSB_AD_GLPI.md",
     "02_Script_Presentation.md",
-    "01_Attentes_Jury.md",
     "03_Simulation_Questions.md"
   ]
 }
