@@ -1,33 +1,57 @@
-# Phase 2 & 3 : GSB, Active Directory et GLPI
+# Fiche Technique : GSB, Active Directory et GLPI (Expert)
 
-Ces trois briques forment le cœur de ton infrastructure "traditionnelle" pour l'examen. Le jury t'attendra sur la gestion des droits et l'automatisation du support.
-
-## 1. GSB (L'Infrastructure de base)
-**C'est quoi ?** Un projet académique simulant le réseau d'un laboratoire pharmaceutique.
-**Rôle** : Montrer ta capacité à segmenter un réseau et à fournir des services de base.
-*   **Segmentation** : Utilisation de **VLANs** (VLAN 10: Admin, VLAN 20: Prod, VLAN 30: Guest) pour isoler les flux.
-*   **Routage** : Inter-VLAN pour permettre (ou bloquer) la communication entre services.
-
-## 2. Active Directory Domain Services (AD DS)
-**C'est quoi ?** L'annuaire qui centralise tout (utilisateurs, ordinateurs, droits).
-**Points clés à expliquer :**
-*   **DNS** : Indispensable. Sans DNS, pas d'AD. Il permet de résoudre les noms des contrôleurs de domaine.
-*   **DHCP** : Distribue les IPs automatiquement. Le jury demandera : "Pourquoi une IP fixe sur le serveur et dynamique sur les clients ?".
-*   **OU (Unités d'Organisation)** : Permettent de structurer l'entreprise par service (RH, Ventes, IT) pour appliquer des politiques différentes.
-*   **GPO (Group Policy Objects)** : L'outil d'automatisation par excellence.
-    *   *Exemples* : Déploiement de lecteurs réseau, restriction du panneau de configuration, fond d'écran imposé.
-
-## 3. GLPI (Gestion de Parc et Ticketing)
-**C'est quoi ?** Un outil ITSM (IT Service Management) pour gérer le matériel et les demandes utilisateurs.
-**L'intégration cruciale : Authentification LDAP**
-Le jury demandera souvent : "Pourquoi lier GLPI à l'AD ?".
-*   **Réponse** : "Pour la centralisation. L'utilisateur utilise le même mot de passe que sa session Windows. S'il quitte l'entreprise, on désactive son compte dans l'AD et son accès GLPI est coupé instantanément."
-**FusionInventory / GLPI Agent :**
-*   Permet de remonter automatiquement la configuration des PCs (RAM, CPU, logiciels installés) sans saisie manuelle.
+Ce document est ta "bible" pour la partie infrastructure traditionnelle. L'objectif est de montrer au jury que tu maîtrises la centralisation et l'automatisation.
 
 ---
 
-### 💡 Questions probables du jury :
-1.  **"C'est quoi un contrôleur de domaine ?"** -> C'est le serveur qui héberge la base de données de l'AD et authentifie les utilisateurs.
-2.  **"À quoi sert une GPO ?"** -> À appliquer des configurations de manière industrielle sur des centaines de machines en quelques clics.
-3.  **"Quelle est la différence entre un groupe de sécurité et une Unité d'Organisation ?"** -> L'OU sert à ranger et à appliquer des GPO, le Groupe sert à donner des droits sur des dossiers ou fichiers.
+## 1. GSB (L'Architecture Réseau)
+**Analogie** : Imagine un hôpital. On ne veut pas que les patients en salle d'attente puissent entrer dans le bloc opératoire ou accéder aux dossiers médicaux. Le réseau, c'est pareil.
+
+*   **VLANs (Virtual LAN)** : On découpe physiquement un seul switch en plusieurs réseaux virtuels.
+    *   *Exemple* : VLAN 10 (Administration), VLAN 20 (Visiteurs). Même s'ils sont branchés sur le même appareil, ils ne se voient pas.
+*   **Trunk (802.1Q)** : C'est l'autoroute qui permet de faire passer tous les VLANs entre un switch et un routeur sur un seul câble.
+
+> [!TIP]
+> **Astuce Jury** : Si on te demande pourquoi faire des VLANs, ne dis pas juste "pour séparer". Dis : "Pour **réduire la surface d'attaque** et optimiser la bande passante en limitant les domaines de diffusion."
+
+---
+
+## 2. Active Directory (Le Cerveau)
+**Analogie** : C'est comme le système de badges d'une grande entreprise. Un seul badge (ton compte AD) te permet d'ouvrir les portes du bureau, d'utiliser l'imprimante et d'accéder à ton PC.
+
+*   **Le Contrôleur de Domaine (DC)** : Le serveur qui détient la base de données.
+    *   *Concept clé* : L'**Annuaire**. C'est une base de données d'objets (Utilisateurs, Ordinateurs, Groupes).
+*   **DNS (Le GPS)** : Sans lui, l'AD meurt. Les ordinateurs utilisent le DNS pour trouver l'adresse IP du Contrôleur de Domaine.
+*   **DHCP (Le Distributeur)** : Il donne les adresses IP. 
+    *   *Question piège* : "Pourquoi le serveur a une IP fixe ?" -> "Parce que c'est un point de repère. Si le GPS (DNS) change de place tout le temps, personne ne le trouve."
+
+### L'arme fatale : Les GPO (Group Policy Objects)
+C'est ton outil de pouvoir. Tu définis une règle une fois, et elle s'applique à 1000 personnes.
+*   **Exemple concret 1 (Sécurité)** : "Interdire l'exécution de fichiers .exe depuis une clé USB pour limiter les ransomwares."
+*   **Exemple concret 2 (Productivité)** : "Connecter automatiquement le lecteur réseau `S:` (Partage) pour tout le service Marketing."
+
+> [!TIP]
+> **Astuce Jury** : Parle de "gestion industrielle". Dis : "Grâce aux GPO, je n'administre pas des PC individuellement, j'administre une **politique de sécurité globale**."
+
+---
+
+## 3. GLPI (Le Support et le Parc)
+**Analogie** : C'est le carnet d'entretien de ta voiture mixé avec un service après-vente.
+
+*   **Inventaire Automatisé** : Utilisation d'un agent (FusionInventory ou GLPI Agent) qui "scanne" le PC et envoie tout à GLPI.
+    *   *Pourquoi ?* Pour savoir quel PC est trop vieux, qui a besoin de RAM, ou quels logiciels illégaux sont installés.
+*   **Liaison AD / LDAP** :
+    *   *L'intérêt* : L'utilisateur n'a pas de nouveau mot de passe à retenir. Il utilise ses identifiants Windows.
+    *   *Explication technique* : GLPI va "interroger" l'AD via le protocole LDAP (port 389) pour vérifier l'identité de l'utilisateur.
+
+> [!TIP]
+> **Astuce Jury** : Insiste sur la **traçabilité**. "GLPI me permet de suivre l'historique d'un ticket : qui est intervenu, quand, et quelle a été la solution. C'est la base de la démarche **ITIL**."
+
+---
+
+## 📚 Résumé des flux (Pour le schéma)
+1. **PC Client** demande une IP au **DHCP**.
+2. **PC Client** demande au **DNS** où est le serveur AD.
+3. **Utilisateur** se connecte (Auth **Kerberos** via l'AD).
+4. **GPO** descend sur le PC pour configurer le fond d'écran et les lecteurs réseau.
+5. **GLPI** vérifie les droits de l'utilisateur via **LDAP** pour le laisser ouvrir un ticket.

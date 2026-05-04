@@ -201,9 +201,9 @@ export default function Portfolio() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-20">
           {/* SISR BADGE (Inspired by Felix) */}
           <div className="flex justify-center mb-8">
-            <div className="flex items-center gap-3 px-4 py-2 bg-black/40 backdrop-blur-md border border-white/20 rounded-full">
-              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-              <span className="text-white font-mono text-xs font-bold uppercase tracking-widest">
+            <div className="flex items-center gap-2 sm:gap-3 px-3 sm:px-4 py-2 bg-black/40 backdrop-blur-md border border-white/20 rounded-full">
+              <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse shrink-0"></div>
+              <span className="text-white font-mono text-[10px] sm:text-xs font-bold uppercase tracking-widest text-center">
                 ÉTUDIANT BTS SIO - OPTION SISR (2ÈME ANNÉE)
               </span>
             </div>
@@ -211,32 +211,32 @@ export default function Portfolio() {
 
           <div className="max-w-4xl mx-auto text-center md:text-left">
             <div className="animate-fade-in">
-              <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-8 leading-none text-white tracking-tighter">
+              <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black mb-6 sm:mb-8 leading-none text-white tracking-tighter">
                 JORDAN
                 <br />
                 AZIAHA
               </h1>
 
-              <p className="text-white/90 text-2xl md:text-3xl font-display uppercase tracking-[0.2em] mb-12 opacity-90">
+              <p className="text-white/90 text-lg sm:text-2xl md:text-3xl font-display uppercase tracking-[0.1em] sm:tracking-[0.2em] mb-8 sm:mb-12 opacity-90">
                 Infrastructure & Security Expert
               </p>
 
               {/* QUICK ACCESS BUTTONS */}
-              <div className="flex flex-col sm:flex-row gap-6 mb-16 max-w-2xl mx-auto md:mx-0">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-10 sm:mb-16 max-w-2xl mx-auto md:mx-0">
                 <a
                   href={`${process.env.NEXT_PUBLIC_BASE_PATH}/cv-jordan-aziaha.pdf`}
                   target="_blank"
-                  className="flex-1 flex items-center justify-center gap-3 bg-white text-orange-600 py-4 rounded-2xl font-bold uppercase tracking-widest hover:scale-105 transition-transform shadow-2xl"
+                  className="flex-1 flex items-center justify-center gap-2 sm:gap-3 bg-white text-orange-600 py-3 sm:py-4 rounded-2xl font-bold uppercase text-sm sm:text-base tracking-wider sm:tracking-widest hover:scale-105 transition-transform shadow-2xl"
                 >
-                  <FileText size={20} />
+                  <FileText size={18} />
                   CONSULTER MON CV
                 </a>
                 <a
                   href={`${process.env.NEXT_PUBLIC_BASE_PATH}/tableau-synthese-jordan-aziaha.pdf`}
                   target="_blank"
-                  className="flex-1 flex items-center justify-center gap-3 bg-transparent border-2 border-white text-white py-4 rounded-2xl font-bold uppercase tracking-widest hover:bg-white hover:text-orange-600 transition-all shadow-xl"
+                  className="flex-1 flex items-center justify-center gap-2 sm:gap-3 bg-transparent border-2 border-white text-white py-3 sm:py-4 rounded-2xl font-bold uppercase text-sm sm:text-base tracking-wider sm:tracking-widest hover:bg-white hover:text-orange-600 transition-all shadow-xl"
                 >
-                  <Newspaper size={20} />
+                  <Newspaper size={18} />
                   TABLEAU DE SYNTHÈSE
                 </a>
               </div>
@@ -280,11 +280,11 @@ export default function Portfolio() {
       </section>
 
 
-      <section id="about" className="py-32 bg-[#0a0a0a] relative overflow-hidden">
+      <section id="about" className="py-16 sm:py-32 bg-[#0a0a0a] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="mb-20">
+          <div className="mb-12 sm:mb-20">
             <p className="text-orange-500 text-lg font-medium mb-4">Présentation</p>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight max-w-4xl">
+            <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight max-w-4xl">
               À Propos de <span className="text-orange-500">Moi</span>
             </h2>
             <div className="w-20 h-1.5 bg-orange-500 mt-6 rounded-full"></div>
@@ -292,7 +292,7 @@ export default function Portfolio() {
 
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="space-y-8">
-              <h3 className="text-3xl font-bold text-white">L'infrastructure au service de l'intelligence artificielle</h3>
+              <h3 className="text-xl sm:text-3xl font-bold text-white">L'infrastructure au service de l'intelligence artificielle</h3>
               <p className="text-gray-400 leading-relaxed text-lg">
                 Actuellement en 2ème année de **BTS SIO spécialité SISR à l'école IPSSI**, je ne me contente pas de suivre un cursus académique. Passionné par l'efficience technologique, j'ai choisi d'entreprendre en parallèle de mes études pour confronter mes compétences aux exigences réelles du marché.
               </p>
@@ -302,7 +302,7 @@ export default function Portfolio() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-orange-500/30 transition-all shadow-xl group">
+              <div className="p-6 sm:p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-orange-500/30 transition-all shadow-xl group">
                 <div className="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-500 mb-6 group-hover:scale-110 transition-transform">
                   <GraduationCap size={24} />
                 </div>
@@ -311,7 +311,7 @@ export default function Portfolio() {
                 <p className="text-orange-500 text-xs font-mono mt-2 uppercase tracking-widest">Expertise Réseau</p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-blue-500/30 transition-all shadow-xl group">
+              <div className="p-6 sm:p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-blue-500/30 transition-all shadow-xl group">
                 <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500 mb-6 group-hover:scale-110 transition-transform">
                   <Shield size={24} />
                 </div>
@@ -320,7 +320,7 @@ export default function Portfolio() {
                 <p className="text-blue-500 text-xs font-mono mt-2 uppercase tracking-widest">Infrastructure d'État</p>
               </div>
 
-              <div className="p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-green-500/30 transition-all shadow-xl group sm:col-span-2">
+              <div className="p-6 sm:p-8 rounded-3xl bg-[#111] border border-white/5 hover:border-green-500/30 transition-all shadow-xl group sm:col-span-2">
                 <div className="w-12 h-12 rounded-2xl bg-green-500/10 flex items-center justify-center text-green-500 mb-6 group-hover:scale-110 transition-transform">
                   <Rocket size={24} />
                 </div>
@@ -337,22 +337,22 @@ export default function Portfolio() {
         </div>
       </section>
       {/* EXPÉRIENCE SECTION */}
-      <section id="experience" className="py-32 bg-[#0f0f0f] relative overflow-hidden">
+      <section id="experience" className="py-16 sm:py-32 bg-[#0f0f0f] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="mb-20">
+          <div className="mb-12 sm:mb-20">
             <p className="text-orange-500 text-lg font-medium mb-4">Parcours professionnel</p>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight">Expérience</h2>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight">Expérience</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Freelance / Entrepreneur */}
-            <div className="md:col-span-2 group p-10 rounded-3xl bg-gradient-to-br from-[#1a1a1a] to-[#111] border border-orange-500/20 hover:border-orange-500/50 transition-all duration-500 flex flex-col shadow-2xl">
-              <div className="flex justify-between items-start mb-8">
+            <div className="md:col-span-2 group p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-[#1a1a1a] to-[#111] border border-orange-500/20 hover:border-orange-500/50 transition-all duration-500 flex flex-col shadow-2xl">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-6 sm:mb-8">
                 <div>
-                  <h3 className="text-3xl font-bold text-white mb-2">Indépendant - Solutions Cloud</h3>
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white mb-2">Indépendant - Solutions Cloud</h3>
                   <p className="text-orange-500 font-mono text-sm uppercase tracking-wider">Projets Clients Personnels</p>
                 </div>
-                <span className="px-4 py-1 rounded-full bg-orange-500/10 text-orange-500 text-xs border border-orange-500/20">Activité Complémentaire</span>
+                <span className="px-4 py-1 rounded-full bg-orange-500/10 text-orange-500 text-xs border border-orange-500/20 self-start shrink-0">Activité Complémentaire</span>
               </div>
               <p className="text-gray-400 leading-relaxed mb-8 text-lg">
                 Conception et déploiement d'infrastructures cloud pour des clients professionnels. Mise en place d'environnements conteneurisés sécurisés pour des services de communication et d'automatisation.
@@ -381,13 +381,13 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="group p-10 rounded-3xl bg-[#151515] border border-white/5 hover:border-blue-500/30 transition-all duration-500 flex flex-col">
-              <div className="flex justify-between items-start mb-8">
+            <div className="group p-6 sm:p-10 rounded-3xl bg-[#151515] border border-white/5 hover:border-blue-500/30 transition-all duration-500 flex flex-col">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-6 sm:mb-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Stage de 1ère année</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Stage de 1ère année</h3>
                   <p className="text-blue-500 font-mono text-sm uppercase tracking-wider">Ministère de la Justice (SNUM)</p>
                 </div>
-                <span className="px-4 py-1 rounded-full bg-white/5 text-white/50 text-xs border border-white/10">2025 (8 semaines)</span>
+                <span className="px-4 py-1 rounded-full bg-white/5 text-white/50 text-xs border border-white/10 self-start shrink-0">2025 (8 semaines)</span>
               </div>
               <p className="text-gray-400 leading-relaxed mb-8">
                 Stage d'observation au sein du Service du Numérique. Découverte des infrastructures critiques et des enjeux de souveraineté numérique de l'administration judiciaire.
@@ -408,13 +408,13 @@ export default function Portfolio() {
               </ul>
             </div>
 
-            <div className="group p-10 rounded-3xl bg-[#151515] border border-white/5 hover:border-orange-500/30 transition-all duration-500 flex flex-col">
-              <div className="flex justify-between items-start mb-8">
+            <div className="group p-6 sm:p-10 rounded-3xl bg-[#151515] border border-white/5 hover:border-orange-500/30 transition-all duration-500 flex flex-col">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-6 sm:mb-8">
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-2">Alternance</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">Alternance</h3>
                   <p className="text-orange-500 font-mono text-sm uppercase tracking-wider">Agence d'Automatisation</p>
                 </div>
-                <span className="px-4 py-1 rounded-full bg-white/5 text-white/50 text-xs border border-white/10">2026 - Présent</span>
+                <span className="px-4 py-1 rounded-full bg-white/5 text-white/50 text-xs border border-white/10 self-start shrink-0">2026 - Présent</span>
               </div>
               <p className="text-gray-400 leading-relaxed mb-8">
                 Déploiement de solutions d'automatisation et veille technologique. Optimisation de processus internes via des agents spécialisés.
@@ -440,12 +440,12 @@ export default function Portfolio() {
 
 
       {/* MES PROJETS */}
-      <section id="projects" className="py-32 bg-[#1a1a1a] relative overflow-hidden">
+      <section id="projects" className="py-16 sm:py-32 bg-[#1a1a1a] relative overflow-hidden">
 
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="mb-20 text-center">
+          <div className="mb-12 sm:mb-20 text-center">
             <p className="text-orange-500 text-lg font-medium mb-4">Réalisations récentes</p>
-            <h2 className="text-5xl md:text-6xl font-black text-white leading-tight">Mes Projets</h2>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white leading-tight">Mes Projets</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -609,22 +609,22 @@ export default function Portfolio() {
       </section>
 
 
-      <section id="skills" className="py-32 bg-[#0a0a0a] relative overflow-hidden">
+      <section id="skills" className="py-16 sm:py-32 bg-[#0a0a0a] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="mb-20">
+          <div className="mb-12 sm:mb-20">
             <p className="text-orange-500 text-lg font-medium mb-4">Expertise technique</p>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight">Compétences</h2>
+            <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white leading-tight">Compétences</h2>
             <div className="w-20 h-1.5 bg-orange-500 mt-6 rounded-full"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* RÉSEAUX */}
-            <div className="bg-[#111] rounded-3xl p-10 border border-white/5 hover:border-blue-500/30 transition-all shadow-2xl">
+            <div className="bg-[#111] rounded-3xl p-6 sm:p-10 border border-white/5 hover:border-blue-500/30 transition-all shadow-2xl">
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-500">
                   <Network size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Réseaux</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">Réseaux</h3>
               </div>
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
@@ -649,12 +649,12 @@ export default function Portfolio() {
             </div>
 
             {/* ADMINISTRATION SYSTÈMES */}
-            <div className="bg-[#111] rounded-3xl p-10 border border-white/5 hover:border-orange-500/30 transition-all shadow-2xl">
+            <div className="bg-[#111] rounded-3xl p-6 sm:p-10 border border-white/5 hover:border-orange-500/30 transition-all shadow-2xl">
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-500">
                   <ServerIcon size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Administration Systèmes</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">Administration Systèmes</h3>
               </div>
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
@@ -679,12 +679,12 @@ export default function Portfolio() {
             </div>
 
             {/* CLOUD & CONTENEURISATION */}
-            <div className="bg-[#111] rounded-3xl p-10 border border-white/5 hover:border-cyan-500/30 transition-all shadow-2xl">
+            <div className="bg-[#111] rounded-3xl p-6 sm:p-10 border border-white/5 hover:border-cyan-500/30 transition-all shadow-2xl">
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 flex items-center justify-center text-cyan-500">
                   <Rocket size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Cloud & Conteneurisation</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">Cloud & Conteneurisation</h3>
               </div>
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
@@ -709,12 +709,12 @@ export default function Portfolio() {
             </div>
 
             {/* SÉCURITÉ & GESTION */}
-            <div className="bg-[#111] rounded-3xl p-10 border border-white/5 hover:border-red-500/30 transition-all shadow-2xl">
+            <div className="bg-[#111] rounded-3xl p-6 sm:p-10 border border-white/5 hover:border-red-500/30 transition-all shadow-2xl">
               <div className="flex items-center gap-4 mb-8">
                 <div className="w-12 h-12 rounded-2xl bg-red-500/10 flex items-center justify-center text-red-500">
                   <ShieldCheck size={28} />
                 </div>
-                <h3 className="text-2xl font-bold text-white">Sécurité & Gestion</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-white">Sécurité & Gestion</h3>
               </div>
               <div className="space-y-6">
                 <div className="flex items-start gap-4 p-4 rounded-2xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
@@ -755,13 +755,13 @@ export default function Portfolio() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-32 bg-[#0a0a0a] relative overflow-hidden">
+      <section id="contact" className="py-16 sm:py-32 bg-[#0a0a0a] relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
           <div className="grid lg:grid-cols-2 gap-20">
             {/* GAUCHE : INFOS */}
             <div>
               <p className="text-orange-500 text-lg font-medium mb-4">Construisons ensemble</p>
-              <h2 className="text-5xl md:text-6xl font-black text-white mb-8 leading-tight">
+              <h2 className="text-3xl sm:text-5xl md:text-6xl font-black text-white mb-8 leading-tight">
                 Discutons de vos <br />
                 <span className="text-orange-500">infrastructures</span>
               </h2>
@@ -776,7 +776,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 uppercase tracking-widest font-bold">Email</p>
-                    <a href="mailto:jordan.aziaha@gmail.com" className="text-xl text-white font-bold hover:text-orange-500 transition-colors">
+                    <a href="mailto:jordan.aziaha@gmail.com" className="text-base sm:text-xl text-white font-bold hover:text-orange-500 transition-colors break-all sm:break-normal">
                       jordan.aziaha@gmail.com
                     </a>
                   </div>
@@ -788,7 +788,7 @@ export default function Portfolio() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500 uppercase tracking-widest font-bold">Localisation</p>
-                    <p className="text-xl text-white font-bold">Île-de-France (Marne-la-Vallée / Nanterre)</p>
+                    <p className="text-base sm:text-xl text-white font-bold">Île-de-France (Marne-la-Vallée / Nanterre)</p>
                   </div>
                 </div>
               </div>
@@ -806,7 +806,7 @@ export default function Portfolio() {
             </div>
 
             {/* DROITE : FORMULAIRE */}
-            <div className="bg-[#111] p-10 rounded-3xl border border-white/5 shadow-2xl relative">
+            <div className="bg-[#111] p-6 sm:p-10 rounded-3xl border border-white/5 shadow-2xl relative">
               <form className="space-y-6">
                 <div>
                   <label className="block text-sm font-bold text-gray-400 uppercase tracking-widest mb-3">Nom / Entreprise</label>

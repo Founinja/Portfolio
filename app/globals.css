@@ -144,9 +144,15 @@
   animation: fade-in 1s ease-out;
 }
 
-/* Smooth scroll */
+/* Smooth scroll & mobile overflow fix */
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Personnalisation scrollbar */

@@ -43,40 +43,40 @@ export default function VeillePage() {
       </nav>
 
       {/* HEADER SECTION */}
-      <header className="pt-40 pb-20 relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/5 blur-[150px] rounded-full mix-blend-screen pointer-events-none"></div>
+      <header className="pt-28 sm:pt-40 pb-12 sm:pb-20 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-orange-500/5 blur-[150px] rounded-full mix-blend-screen pointer-events-none"></div>
         <div className="max-w-6xl mx-auto px-6 relative z-10">
-          <div className="flex gap-3 mb-8">
-            <span className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-xl text-sm font-bold text-gray-300 border border-white/10 shadow-lg">
+          <div className="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8">
+            <span className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/5 rounded-xl text-xs sm:text-sm font-bold text-gray-300 border border-white/10 shadow-lg">
               <BrainCircuit size={16} className="text-orange-500" />
               Intelligence Artificielle
             </span>
-            <span className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-xl text-sm font-bold text-gray-300 border border-white/10 shadow-lg">
+            <span className="flex items-center gap-2 px-3 sm:px-4 py-2 bg-white/5 rounded-xl text-xs sm:text-sm font-bold text-gray-300 border border-white/10 shadow-lg">
               <ShieldAlert size={16} className="text-red-500" />
               Cybersécurité
             </span>
           </div>
-          <h1 className="text-5xl md:text-7xl font-black mb-8 leading-tight tracking-tight">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-black mb-6 sm:mb-8 leading-tight tracking-tight">
             Veille <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-600">
               Technologique
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed">
+          <p className="text-base sm:text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed">
             L'émergence des modèles d'IA avancés (Claude Mythos) et leur impact critique sur la découverte de vulnérabilités Zero-Day au sein des infrastructures.
           </p>
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-6 pb-32 space-y-32">
+      <main className="max-w-6xl mx-auto px-6 pb-16 sm:pb-32 space-y-16 sm:space-y-32">
 
         {/* PEDAGOGICAL SECTION: ZERO-DAY EXPLAINER */}
-        <section className="bg-orange-500/5 border border-orange-500/20 rounded-3xl p-8 md:p-10">
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-2xl bg-orange-500 flex items-center justify-center text-black shadow-lg shadow-orange-500/20">
-              <ShieldAlert size={24} />
+        <section className="bg-orange-500/5 border border-orange-500/20 rounded-3xl p-5 sm:p-8 md:p-10">
+          <div className="flex items-start sm:items-center gap-3 sm:gap-4 mb-6">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-orange-500 flex items-center justify-center text-black shadow-lg shadow-orange-500/20 shrink-0">
+              <ShieldAlert size={20} />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold">Comprendre les bases : L'attaque Zero-Day</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold">Comprendre les bases : L'attaque Zero-Day</h2>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
@@ -110,15 +110,15 @@ export default function VeillePage() {
 
         {/* LE SUJET : CARTES ANALYTIQUES */}
         <section>
-          <div className="flex items-center gap-4 mb-10">
-            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white border border-white/10">
-              <Eye size={24} />
+          <div className="flex items-center gap-3 sm:gap-4 mb-8 sm:mb-10">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white border border-white/10 shrink-0">
+              <Eye size={20} />
             </div>
-            <h2 className="text-3xl font-bold">Le Cœur du Sujet</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold">Le Cœur du Sujet</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-[#151515] to-[#0f0f0f] border border-orange-500/20 hover:border-orange-500/50 transition-all shadow-2xl relative overflow-hidden group">
+            <div className="p-5 sm:p-8 rounded-3xl bg-gradient-to-br from-[#151515] to-[#0f0f0f] border border-orange-500/20 hover:border-orange-500/50 transition-all shadow-2xl relative overflow-hidden group">
               <div className="absolute -right-10 -top-10 opacity-5 group-hover:opacity-10 transition-opacity">
                 <BrainCircuit size={200} />
               </div>
@@ -138,7 +138,7 @@ export default function VeillePage() {
               </ul>
             </div>
 
-            <div className="p-8 rounded-3xl bg-gradient-to-br from-[#151515] to-[#0f0f0f] border border-blue-500/20 hover:border-blue-500/50 transition-all shadow-2xl relative overflow-hidden group">
+            <div className="p-5 sm:p-8 rounded-3xl bg-gradient-to-br from-[#151515] to-[#0f0f0f] border border-blue-500/20 hover:border-blue-500/50 transition-all shadow-2xl relative overflow-hidden group">
               <div className="absolute -right-10 -top-10 opacity-5 group-hover:opacity-10 transition-opacity">
                 <ShieldCheck size={200} />
               </div>
@@ -162,14 +162,14 @@ export default function VeillePage() {
 
         {/* IMPACT SISR */}
         <section>
-          <div className="flex items-center gap-4 mb-10">
-            <div className="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-500 border border-orange-500/20">
-              <ServerIcon size={24} />
+          <div className="flex items-center gap-3 sm:gap-4 mb-8 sm:mb-10">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-500 border border-orange-500/20 shrink-0">
+              <ServerIcon size={20} />
             </div>
-            <h2 className="text-3xl font-bold">Impact pour l'Administrateur (SISR)</h2>
+            <h2 className="text-xl sm:text-3xl font-bold">Impact pour l'Administrateur (SISR)</h2>
           </div>
 
-          <div className="bg-[#111] p-10 rounded-3xl border border-white/5 shadow-2xl">
+          <div className="bg-[#111] p-5 sm:p-10 rounded-3xl border border-white/5 shadow-2xl">
             <p className="text-xl text-gray-300 mb-8 leading-relaxed font-medium">
               En tant que futur administrateur réseau et systèmes, cette veille soulève des questions directes sur ma façon de concevoir et de défendre une infrastructure.
             </p>
@@ -210,11 +210,11 @@ export default function VeillePage() {
 
         {/* MÉTHODOLOGIE ET AUTOMATISATION */}
         <section>
-          <div className="flex items-center gap-4 mb-10">
-            <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white border border-white/10">
-              <BrainCircuit size={24} />
+          <div className="flex items-center gap-3 sm:gap-4 mb-8 sm:mb-10">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white border border-white/10 shrink-0">
+              <BrainCircuit size={20} />
             </div>
-            <h2 className="text-3xl font-bold">Méthodologie & Automatisation IA</h2>
+            <h2 className="text-xl sm:text-3xl font-bold">Méthodologie & Automatisation IA</h2>
           </div>
 
           <p className="text-xl text-gray-300 mb-10 leading-relaxed max-w-4xl">
@@ -294,7 +294,7 @@ export default function VeillePage() {
         <section className="pt-20 border-t border-white/10">
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-10">
             <div>
-              <h2 className="text-3xl font-bold mb-2">Actualités en direct</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-2">Actualités en direct</h2>
               <p className="text-gray-400">Mes flux RSS pour un suivi en temps réel.</p>
             </div>
             <button
