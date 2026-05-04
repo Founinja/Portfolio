@@ -292,7 +292,7 @@ export default function Portfolio() {
 
           <div className="grid lg:grid-cols-2 gap-16">
             <div className="space-y-8">
-              <h3 className="text-xl sm:text-3xl font-bold text-white">L'infrastructure au service de l'intelligence artificielle</h3>
+              <h3 className="text-xl sm:text-3xl font-bold text-white">Mon Parcours</h3>
               <p className="text-gray-400 leading-relaxed text-lg">
                 Actuellement en 2ème année de **BTS SIO spécialité SISR à l'école IPSSI**, je ne me contente pas de suivre un cursus académique. Passionné par l'efficience technologique, j'ai choisi d'entreprendre en parallèle de mes études pour confronter mes compétences aux exigences réelles du marché.
               </p>
